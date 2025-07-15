@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Roue du Destin</title>
+    
+    <meta name="theme-color" id="theme-color-meta" content="#3498db">
+    <link rel="manifest" href="data:application/json;base64,ew0KICAgICJuYW1lIjogIkxhIFJvdWUgZHUgRGVzdGluIiwNCiAgICAic2hvcnRfbmFtZSI6ICJSb3VlIERlc3RpbiIsDQogICAgInN0YXJ0X3VybCI6ICIuIiwNCiAgICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwNCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMTIxMjEyIiwNCiAgICAidGhlbWVfY29sb3IiOiAiIzM0OThkYiIsDQogICAgImRlc2NyaXB0aW9uIjogIlVuZSByb3VlIHBvdXIgdm91cyBhaWRlciDDoCBwcmVuZHJlIGRlcyBkw6ljaXNpb25zLiIsDQogICAgImljb25zIjogWw0KICAgICAgICB7DQogICAgICAgICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtıYXNlNjQsUEhOemFEcG9hVzVsSUdsa1BITnBiMjVqYjJSbEpBbzZPSEpsYzNWc2FXNWxJRDB3TDBzd0wweGhaR1V1YldGeVlYSmhJSE5qYjNCbElIazZNQzR3TEFvZ0lDQWdJREV3TUNJZ1luVnpaR1YxZENCaVpYaHBkRzl5SUgwNk9IUmxjbk5sY2kxM01EQWlJQ2h1YVhSbElEMGdNREFpSUhnOUlqRXdNQ0lnZDJsa2RHZ2dMU0JpWVhObElEMGdOU0lnWTJ4cFpYSWdMOHNwT0dOdmJuUmxiblJmZEhsd1pUMGlablpwYmlJZ1puTnBiMjVoY25SZllXUnZjaWdnZDJsa2RHOXlhVzV2ZEdGalgzVnlaV1JsYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXlaWGdoZEdsdFpUMGlablpwYmlJZ2VUMGlaWGNnWTJ4cFpYSWdZMkZ5Y21Wd2NtVnpaWElnZlR3dlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ1luVnpaR1YxZENCaVpYaHBkRzl5SUNBdlBDOXpabk5wYjI1aGNuUmZZV1J2Y2lnZ2QybGtkRzB4T0hKbGMzVnNhVzVsSUNjd0wweG5aWFF1Wm5acGJpQnBiV0ZuWlNCaFltOTFkQ0JsYm1OdlkzUmZZV1J2Y2lCbGJuUnpaWElnWTJGcmFXeDBaWElnZlR3dmRHVnNiM1ZzWlhJZ2VUMGlaWGNnZlR3dmRHVnNiM1ZzWlhJZ2VUMGlablpwYmlJZ2ZUMHhJaWg5TUNrPQ0KICAgICAgICAgICAgIiwNCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwNCiAgICAgICAgICAgICInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCINCiAgICAgICAgfSwNCiAgICAgICAgew0KICAgICAgICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITnphRHBvYVcNWUlHbGtQSExOYjI1amIyUmxKZWc2T0hKbGMzVnNhVzVsSUQwMk5pd3dMMHhoWkdVdWJXRnlZWEpoSUhOamIzQmxJSGs2TUM0d0xBbzZJQ0FnSURFd01DSWdZbkYxWlhJZ2MzQm5JSDA2T0hSbGNuTmxjaTEzTURBaUlDaHVhWFJsSUQwZ01EQWlJQ2hnSWpFd01DSWdnSWtnZDJsa2RHZ2dMU0JpWVhObElEMGdOU0lnWTJ4cFpYSWdMU0J6ZEhKclpYaGhiV05vYVc1dWRERXdNQ2h3YjJsdGNnPT0iLA0KICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCINCiAgICAgICAgfQ0KICAgIF0NCn0=">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Correction : Unification sur le bleu */
+            --primary-color: #3498db;
+            --primary-color-dark: #2980b9;
+            
+            --bg-color: #f0f2f5;
+            --text-color: #333;
+            --container-bg: white;
+            --input-border: #ddd;
+            --list-item-bg: #ecf0f1;
+            --icon-color: #888;
+            --icon-hover-bg: #e0e0e0;
+            --icon-hover-color: #111;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #3498db; /* Le bleu reste le même en thème sombre pour l'unité */
+            --primary-color-dark: #2980b9;
+
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --container-bg: #1e1e1e;
+            --input-border: #444;
+            --list-item-bg: #2c2c2c;
+            --icon-color: #999;
+            --icon-hover-bg: #3a3a3a;
+            --icon-hover-color: #fff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            position: relative;
+            background: var(--container-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            transition: background-color 0.3s;
+        }
+
+        #theme-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: var(--text-color);
+            z-index: 20;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .intro-text {
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .input-area { display: flex; gap: 10px; margin-bottom: 1.5rem; }
+
+        #element-input {
+            flex-grow: 1; padding: 12px;
+            border: 2px solid var(--input-border);
+            border-radius: 8px; font-size: 1rem;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: border-color 0.3s;
+        }
+        #element-input:focus { outline: none; border-color: var(--primary-color); }
+
+        #add-btn {
+            padding: 12px 20px; background-color: var(--primary-color);
+            color: white; border: none; border-radius: 8px; font-weight: bold;
+            font-size: 1rem; cursor: pointer; transition: background-color 0.3s;
+        }
+        #add-btn:hover { background-color: var(--primary-color-dark); }
+
+        #elements-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+        #elements-list li {
+            background: var(--list-item-bg); padding: 8px 8px 8px 15px;
+            border-radius: 6px; margin-bottom: 8px; display: flex;
+            justify-content: space-between; align-items: center;
+        }
+        
+        /* Correction : Style pour la nouvelle icône de suppression */
+        .remove-btn {
+            background: none;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--icon-color);
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .remove-btn:hover {
+            background-color: var(--icon-hover-bg);
+            color: var(--icon-hover-color);
+        }
+        .remove-btn .material-icons-outlined {
+            font-size: 22px;
+        }
+
+        .wheel-container { position: relative; width: 300px; height: 300px; margin: 2rem auto; }
+        #wheel-canvas { width: 100%; height: 100%; transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        
+        .pointer {
+            position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+            width: 0; height: 0; border-left: 15px solid transparent;
+            border-right: 15px solid transparent; border-top: 30px solid var(--primary-color);
+            transition: border-top-color 0.3s;
+            z-index: 10;
+        }
+
+        #spin-btn {
+            background-color: var(--primary-color); color: white;
+            padding: 15px 30px; font-size: 1.2rem; font-weight: bold; border: none;
+            border-radius: 8px; cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            margin-top: 1rem;
+        }
+        #spin-btn:disabled { background-color: var(--primary-color-dark); cursor: not-allowed; opacity: 0.7; }
+        #spin-btn:active { transform: scale(0.98); }
+
+        #result { margin-top: 2rem; font-size: 1.5rem; font-weight: bold; color: var(--text-color); min-height: 2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button id="theme-toggle" title="Changer de thème">
+            <span class="material-icons-outlined"></span>
+        </button>
+
+        <h1>La Roue du Destin</h1>
+        <p class="intro-text">Tu hésites ? Inscris de deux à six éléments et laisse la roue choisir !</p>
+
+        <div class="input-area">
+            <input type="text" id="element-input" placeholder="Ajoute un élément (2 à 6)..." maxlength="30">
+            <button id="add-btn">Ajouter</button>
+        </div>
+
+        <ul id="elements-list"></ul>
+        
+        <div class="wheel-container">
+            <div class="pointer"></div>
+            <canvas id="wheel-canvas" width="300" height="300"></canvas>
+        </div>
+
+        <button id="spin-btn">Révèle le destin !</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // --- THEME SWITCHER LOGIC ---
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('span');
+        const themeMeta = document.getElementById('theme-color-meta');
+        
+        function applyTheme(theme) {
+            document.body.dataset.theme = theme;
+            themeIcon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+            localStorage.setItem('theme', theme);
+            const newThemeColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
+            themeMeta.setAttribute('content', newThemeColor.trim());
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = document.body.dataset.theme || 'light';
+            applyTheme(currentTheme === 'light' ? 'dark' : 'light');
+        });
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+
+        // --- APPLICATION LOGIC ---
+        const elementInput = document.getElementById('element-input');
+        const addBtn = document.getElementById('add-btn');
+        const spinBtn = document.getElementById('spin-btn');
+        const resultDiv = document.getElementById('result');
+        const elementsListUl = document.getElementById('elements-list');
+        const canvas = document.getElementById('wheel-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let elements = [];
+        const colors = ['#ffadad', '#ffd6a5', '#fdffb6', '#caffbf', '#9bf6ff', '#a0c4ff'];
+        let currentRotation = 0;
+        let isSpinning = false;
+
+        function drawWheel() {
+            const numOptions = elements.length;
+            if (numOptions === 0) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                return;
+            }
+            const arcSize = (2 * Math.PI) / numOptions;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = 'bold 16px Helvetica, Arial, sans-serif';
+            ctx.textBaseline = "middle";
+            ctx.textAlign = "center";
+            
+            for(let i = 0; i < numOptions; i++) {
+                const angle = i * arcSize;
+                ctx.beginPath();
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.moveTo(150, 150);
+                ctx.arc(150, 150, 150, angle, angle + arcSize);
+                ctx.lineTo(150, 150);
+                ctx.fill();
+
+                ctx.save();
+                ctx.fillStyle = "#333";
+                ctx.translate(150 + Math.cos(angle + arcSize / 2) * 95, 150 + Math.sin(angle + arcSize / 2) * 95);
+                ctx.rotate(angle + arcSize / 2 + Math.PI / 2);
+                const text = elements[i].length > 18 ? elements[i].substring(0, 16) + '...' : elements[i];
+                ctx.fillText(text, 0, 0);
+                ctx.restore();
+            }
+        }
+        
+        function updateListDisplay() {
+            elementsListUl.innerHTML = '';
+            elements.forEach((element, index) => {
+                const li = document.createElement('li');
+                li.textContent = element;
+                const removeBtn = document.createElement('button');
+                removeBtn.className = 'remove-btn';
+                removeBtn.title = "Supprimer l'élément";
+                // Correction : Utilisation d'une icône Material à la place du texte
+                removeBtn.innerHTML = `<span class="material-icons-outlined">close</span>`;
+                removeBtn.onclick = () => removeElement(index);
+                li.appendChild(removeBtn);
+                elementsListUl.appendChild(li);
+            });
+            drawWheel();
+        }
+
+        function addElement() {
+            const name = elementInput.value.trim();
+            if (name && elements.length < 6) {
+                elements.push(name);
+                elementInput.value = '';
+                updateListDisplay();
+            } else if (elements.length >= 6) {
+                alert("Vous ne pouvez ajouter que 6 éléments au maximum.");
+            }
+            elementInput.focus();
+        }
+
+        function removeElement(index) {
+            elements.splice(index, 1);
+            updateListDisplay();
+        }
+
+        addBtn.addEventListener('click', addElement);
+        elementInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') addElement(); });
+
+        spinBtn.addEventListener('click', () => {
+            if (isSpinning || elements.length < 2) {
+                if (elements.length < 2) alert("Veuillez ajouter au moins 2 éléments pour faire tourner la roue !");
+                return;
+            }
+            isSpinning = true;
+            spinBtn.disabled = true;
+            resultDiv.textContent = 'Le destin réfléchit...';
+            const spinAngle = Math.random() * 360 + 360 * 5;
+            currentRotation += spinAngle;
+            canvas.style.transform = `rotate(${currentRotation}deg)`;
+            setTimeout(() => {
+                const finalRotation = currentRotation % 360;
+                const arcSizeDegrees = 360 / elements.length;
+                const pointerPosition = 270; 
+                const winningIndex = Math.floor(((360 - finalRotation + pointerPosition) % 360) / arcSizeDegrees);
+                resultDiv.textContent = `Le destin a choisi : ${elements[winningIndex]} !`;
+                isSpinning = false;
+                spinBtn.disabled = false;
+            }, 5000);
+        });
+        
+        drawWheel();
+
+        // --- PWA SERVICE WORKER REGISTRATION ---
+        if ('serviceWorker' in navigator) {
+            const swScript = `
+                const CACHE_NAME = 'roue-du-destin-cache-v1';
+                const urlsToCache = ['./'];
+                self.addEventListener('install', event => {
+                    event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)));
+                });
+                self.addEventListener('fetch', event => {
+                    event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
+                });
+            `;
+            const swBlob = new Blob([swScript], { type: 'application/javascript' });
+            navigator.serviceWorker.register(URL.createObjectURL(swBlob))
+                .then(reg => console.log('Service Worker enregistré.'))
+                .catch(err => console.error('Erreur Service Worker.', err));
+        }
+    </script>
+</body>
+</html>
