@@ -12,10 +12,8 @@
 
     <style>
         :root {
-            /* Correction : Unification sur le bleu */
             --primary-color: #3498db;
             --primary-color-dark: #2980b9;
-            
             --bg-color: #f0f2f5;
             --text-color: #333;
             --container-bg: white;
@@ -27,9 +25,8 @@
         }
 
         [data-theme="dark"] {
-            --primary-color: #3498db; /* Le bleu reste le même en thème sombre pour l'unité */
+            --primary-color: #3498db;
             --primary-color-dark: #2980b9;
-
             --bg-color: #121212;
             --text-color: #e0e0e0;
             --container-bg: #1e1e1e;
@@ -65,10 +62,16 @@
             transition: background-color 0.3s;
         }
 
+        /* Correction : Conteneur pour aligner le titre et le bouton */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Correction : Le bouton n'est plus en position absolue */
         #theme-toggle {
-            position: absolute;
-            top: 15px;
-            right: 15px;
             background: none;
             border: none;
             cursor: pointer;
@@ -79,7 +82,8 @@
 
         h1 {
             color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            margin: 0; /* Correction : La marge est maintenant sur le conteneur */
+            text-align: left;
         }
         
         .intro-text {
@@ -115,7 +119,6 @@
             justify-content: space-between; align-items: center;
         }
         
-        /* Correction : Style pour la nouvelle icône de suppression */
         .remove-btn {
             background: none;
             border: none;
@@ -164,15 +167,17 @@
 <body>
 
     <div class="container">
-        <button id="theme-toggle" title="Changer de thème">
-            <span class="material-icons-outlined"></span>
-        </button>
-
-        <h1>La Roue du Destin</h1>
+        <div class="header-container">
+            <h1>La Roue du Destin</h1>
+            <button id="theme-toggle" title="Changer de thème">
+                <span class="material-icons-outlined"></span>
+            </button>
+        </div>
+        
         <p class="intro-text">Tu hésites ? Inscris de deux à six éléments et laisse la roue choisir !</p>
 
         <div class="input-area">
-            <input type="text" id="element-input" placeholder="Ajoute un élément (2 à 6)..." maxlength="30">
+            <input type="text" id="element-input" placeholder="Ajoute un élément..." maxlength="30">
             <button id="add-btn">Ajouter</button>
         </div>
 
@@ -264,7 +269,6 @@
                 const removeBtn = document.createElement('button');
                 removeBtn.className = 'remove-btn';
                 removeBtn.title = "Supprimer l'élément";
-                // Correction : Utilisation d'une icône Material à la place du texte
                 removeBtn.innerHTML = `<span class="material-icons-outlined">close</span>`;
                 removeBtn.onclick = () => removeElement(index);
                 li.appendChild(removeBtn);
